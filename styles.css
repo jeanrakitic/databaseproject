@@ -1,0 +1,75 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 1);
+    overflow: hidden;
+
+}
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows:  280px 80px;
+    grid-template-areas: "text" "footer";
+    margin: 20px;
+
+    font-family: roboto;
+    border-radius: 5px;
+    background: rgb(25, 25, 25);
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+    text-align: center;
+
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.header{
+    grid-area: text;
+    margin: 25px;
+
+}
+.footer{
+    grid-area: footer;
+}
+.header p {
+color: gray;
+font-size: 15px;
+font-weight: 300;
+text-align: center;
+}
+.title {
+    margin-top: 0;
+    font-size: 28px;
+}
+.proj-tech  {
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    padding: 10px;
+    color: white;
+}
+.proj-tech li{
+ list-style: none;
+ margin-right: 20px ;
+ margin-left: 20px;
+ padding: 0;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(1, 0, 0, 0);
+    opacity: 0.6;
+}
+.icons  {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.icons a{
+    padding-left: 200px;
+}
+    
