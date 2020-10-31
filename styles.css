@@ -72,6 +72,10 @@ text-align: center;
 .icons a{
     padding-left: 200px;
 }
+.icons a:hover{
+    color: #FD9D00;
+}
+   
     
 @media all and (max-width: 600px) {
  
